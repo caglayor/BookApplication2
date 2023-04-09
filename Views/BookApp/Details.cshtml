@@ -1,0 +1,10 @@
+﻿@foreach (var book in Model.Books)
+{
+    <tr>
+        <td>@book.Title</td>
+        <td>@book.Author</td>
+        <td>@book.Price</td>
+        <td><a href="/Books/Buy/@book.Id">Buy Now</a></td>
+    </tr>
+}
+

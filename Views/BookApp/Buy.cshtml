@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Buy";
+}
+
+<h2>@ViewData["BookTitle"]</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" class="form-control" id="address" name="address" required>
+    </div>
+    <div class="form-group">
+        <label for="ccnum">Credit Card Number:</label>
+        <input type="text" class="form-control" id="ccnum" name="ccnum" required>
+    </div>
+    <div class="form-group">
+        <label for="expdate">Expiration Date:</label>
+        <input type="text" class="form-control" id="expdate" name="expdate" required>
+    </div>
+    <button type="submit" class="btn btn-primary">OK</button>
+</form>
